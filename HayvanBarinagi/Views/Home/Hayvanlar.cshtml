@@ -1,0 +1,24 @@
+﻿@model HayvanBarinagi.Models.HayvanListeModeli
+<div>
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Adi</th>
+      <th scope="col">Yas</th>
+      <th scope="col">Cins</th>
+    </tr>
+  </thead>
+  <tbody>
+      @foreach(var hayvan in Model.hayvanListModel)
+            {
+                <tr>
+                  <td>@hayvan.Id</td>
+                  <td>@hayvan.Adi</td>
+                  <td>@hayvan.Yas</td>
+                  <td>@hayvan.Cins</td>
+                </tr> 
+            }
+  </tbody>
+</table>
+</div>
