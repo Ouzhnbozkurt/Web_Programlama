@@ -17,20 +17,19 @@ namespace HayvanBarinagi.Controllers
         {
             return View();
         }
+        Context context = new Context();
 
         public IActionResult Hayvanlar()
         {
-            List<Hayvan> hayvanlar = new List<Hayvan> {
-                new Hayvan {Id = 1,Adi="Sparky",Yas=7,Cins="Köpek"},
-                new Hayvan {Id = 2,Adi="Snowball",Yas=4,Cins="Kedi"},
-                new Hayvan {Id = 3,Adi="Sedir",Yas=12,Cins="Kaplumbağa"}
-            };
-            HayvanListeModeli hayvanListeModeli = new HayvanListeModeli {hayvanListModel=hayvanlar};
-            return View(hayvanListeModeli);
+            var hayvanListesi = context.Hayvanlar.ToList();
+            return View(hayvanListesi);
         }
 
         public IActionResult Privacy()
         {
+            ViewBag.Degisken = "Sparky";
+            ViewData["Degisken"] = "Kedi";
+            TempData["Degisken2"] = 5;
             return View();
         }
 
