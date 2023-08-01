@@ -15,16 +15,40 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\oguz_\OneDrive\Masaüstü\Okul\cpp odev1\HayvanBarinagi\HayvanBarinagi
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/oguz_/OneDrive/Masaüstü/Okul/cpp odev1/HayvanBarinagi/HayvanBarinagi/Views/Home/Basvuru.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCYXN2dXJ1LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oguz_/OneDrive/Masaüstü/Okul/cpp odev1/HayvanBarinagi/HayvanBarinagi/Views/Home/GirisYap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHaXJpc1lhcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oguz_/OneDrive/Masaüstü/Okul/cpp odev1/HayvanBarinagi/HayvanBarinagi/Views/Home/Hakkimizda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYWtraW1pemRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/oguz_/OneDrive/Masaüstü/Okul/cpp odev1/HayvanBarinagi/HayvanBarinagi/Views/Home/Hayvanlar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYXl2YW5sYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oguz_/OneDrive/Masaüstü/Okul/cpp odev1/HayvanBarinagi/HayvanBarinagi/Views/Home/HayvanVerme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYXl2YW5WZXJtZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oguz_/OneDrive/Masaüstü/Okul/cpp odev1/HayvanBarinagi/HayvanBarinagi/Views/Home/Iletisim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbGV0aXNpbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/oguz_/OneDrive/Masaüstü/Okul/cpp odev1/HayvanBarinagi/HayvanBarinagi/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/oguz_/OneDrive/Masaüstü/Okul/cpp odev1/HayvanBarinagi/HayvanBarinagi/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/oguz_/OneDrive/Masaüstü/Okul/cpp odev1/HayvanBarinagi/HayvanBarinagi/Views/Home/Sahiplendirme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWhpcGxlbmRpcm1lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/oguz_/OneDrive/Masaüstü/Okul/cpp odev1/HayvanBarinagi/HayvanBarinagi/Views/Home/UyeOl.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVeWVPbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/oguz_/OneDrive/Masaüstü/Okul/cpp odev1/HayvanBarinagi/HayvanBarinagi/Views/Shared/Error.cshtml]

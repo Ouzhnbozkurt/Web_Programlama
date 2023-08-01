@@ -12,24 +12,52 @@ namespace HayvanBarinagi.Controllers
         {
             _logger = logger;
         }
-
+        Context context = new Context();
         public IActionResult Index()
         {
-            return View();
+            var hayvanListesi = context.Hayvanlar.ToList();
+            return View(hayvanListesi);
         }
-        Context context = new Context();
-
+        
         public IActionResult Hayvanlar()
         {
             var hayvanListesi = context.Hayvanlar.ToList();
             return View(hayvanListesi);
         }
 
-        public IActionResult Privacy()
+        public IActionResult Sahiplendirme()
         {
-            ViewBag.Degisken = "Sparky";
-            ViewData["Degisken"] = "Kedi";
-            TempData["Degisken2"] = 5;
+            
+            return View();
+        }
+        public IActionResult Basvuru()
+        {
+
+            return View();
+        }
+        public IActionResult HayvanVerme()
+        {
+
+            return View();
+        }
+        public IActionResult Hakkimizda()
+        {
+
+            return View();
+        }
+        public IActionResult Iletisim()
+        {
+
+            return View();
+        }
+        public IActionResult UyeOl()
+        {
+
+            return View();
+        }
+        public IActionResult GirisYap()
+        {
+
             return View();
         }
 
