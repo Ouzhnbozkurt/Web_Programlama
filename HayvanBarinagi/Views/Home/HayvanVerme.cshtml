@@ -3,52 +3,47 @@
 }
 
 <h2 class="text-center">Hayvan Kabulu Başvurusu Formu</h2>
-<div class="row justify-content-center">
-    <div class="col-md-6">
-        <form>
-            <div class="row mb-3">
-                <div class="col">
-                    <label for="animalName" class="form-label">Hayvan Adı</label>
-                    <input type="text" class="form-control" id="animalName" required>
+@using (Html.BeginForm("HayvanVerme", "Home", FormMethod.Post))
+{
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="animalName" class="form-label">Hayvan Adı</label>
+                        <input type="text" class="form-control" id="animalName" name="hayvanAdi" required>
+                    </div>
+                    <div class="col">
+                        <label for="animalType" class="form-label">Hayvan Türü</label>
+                        <input type="text" class="form-control" id="animalType" name="hayvanTuru" required>
+                    </div>
                 </div>
-                <div class="col">
-                    <label for="animalType" class="form-label">Hayvan Türü</label>
-                    <input type="text" class="form-control" id="animalType" required>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="age" class="form-label">Yaş</label>
+                        <input type="number" class="form-control" id="age" name="yas" required>
+                    </div>
+                    <div class="col">
+                        <label for="gender" class="form-label">Cinsiyet</label>
+                        <select class="form-select" id="gender" name="cinsiyet" required>
+                            <option value="" selected>Lütfen seçin</option>
+                            <option value="erkek">Erkek</option>
+                            <option value="dişi">Dişi</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <div class="row mb-3">
-                <div class="col">
-                    <label for="age" class="form-label">Yaş</label>
-                    <input type="number" class="form-control" id="age" required>
+                <div class="mb-3">
+                    <label for="healthStatus" class="form-label">Sağlık Durumu</label>
+                    <textarea class="form-control" id="healthStatus" rows="3" name="saglikDurumu" required></textarea>
                 </div>
-                <div class="col">
-                    <label for="gender" class="form-label">Cinsiyet</label>
-                    <select class="form-select" id="gender" required>
-                        <option value="" selected>Lütfen seçin</option>
-                        <option value="erkek">Erkek</option>
-                        <option value="dişi">Dişi</option>
-                    </select>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Açıklama</label>
+                    <textarea class="form-control" id="description" rows="5" name="aciklama" required></textarea>
                 </div>
-            </div>
-            <div class="mb-3">
-                <label for="healthStatus" class="form-label">Sağlık Durumu</label>
-                <textarea class="form-control" id="healthStatus" rows="3" required></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="description" class="form-label">Açıklama</label>
-                <textarea class="form-control" id="description" rows="5" required></textarea>
-            </div>
-            <div class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" id="vaccinated">
-                <label class="form-check-label" for="vaccinated">Aşılanmış</label>
-            </div>
-            <div class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" id="neutered">
-                <label class="form-check-label" for="neutered">Kısırlaştırılmış</label>
-            </div>
-            <div class="d-grid gap-2">
-                <button type="submit" class="btn btn-primary">Başvuruyu Gönder</button>
-            </div>
-        </form>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary">Başvuruyu Gönder</button>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
+}

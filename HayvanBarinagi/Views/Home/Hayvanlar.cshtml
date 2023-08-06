@@ -4,7 +4,6 @@
     ViewData["Title"] = "Hayvanlar";
 }
 <h2 class="text-center mb-4">Barınağımızdaki Hayvanların Tablosu</h2>
-<a class="btn btn-primary float-end mb-2" asp-area="" asp-controller="Home" asp-action="HayvanEkle">Hayvan Ekle</a>
 <div>
     <table class="table">
   <thead>
@@ -12,8 +11,6 @@
       <th scope="col">Adı</th>
       <th scope="col">Yas</th>
       <th scope="col">Cins</th>
-      <th scope="col">Düzenle</th>
-      <th scope="col">Sil</th>
     </tr>
   </thead>
   <tbody>
@@ -23,12 +20,6 @@
                     <td>@item.Adi</td>
                     <td>@item.Yas</td>
                     <td>@item.Cins</td>
-                    <td>
-                        <a class="btn btn-secondary" asp-area="" asp-controller="Home" asp-action="HayvanDuzenle" asp-route-id="@item.Id">Düzenle</a>
-                    </td>
-                    <td>
-                        <a class="btn btn-danger" asp-area="" asp-controller="Home" asp-action="HayvanSil" asp-route-id="@item.Id">Sil</a>
-                    </td>
                 </tr>
             }
         </tbody>

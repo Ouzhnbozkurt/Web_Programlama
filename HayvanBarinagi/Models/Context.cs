@@ -12,5 +12,9 @@ namespace HayvanBarinagi.Models
         }
         public DbSet<Hayvan> Hayvanlar { get; set; }
         public DbSet<Kullanici> Kullanicilar { get; set;}
+        public DbSet<Iletisim> Iletisim { get; set; }
+        public DbSet<Sahiplenme> Sahiplenme { get; set; }
+        public DbSet<HayvanVerme> HayvanVerme { get;set; }
+
     }
 }

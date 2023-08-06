@@ -80,3 +80,4 @@ C:\Users\oguz_\OneDrive\Masaüstü\Okul\cpp odev1\HayvanBarinagi\HayvanBarinagi\
 C:\Users\oguz_\OneDrive\Masaüstü\Okul\cpp odev1\HayvanBarinagi\HayvanBarinagi\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\oguz_\OneDrive\Masaüstü\Okul\cpp odev1\HayvanBarinagi\HayvanBarinagi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\oguz_\OneDrive\Masaüstü\Okul\cpp odev1\HayvanBarinagi\HayvanBarinagi\obj\Debug\net6.0\HayvanBarinagi.csproj.CopyComplete
+C:\Users\oguz_\OneDrive\Masaüstü\Okul\cpp odev1\HayvanBarinagi\HayvanBarinagi\obj\Debug\net6.0\scopedcss\Views\Shared\_AdminLayout.cshtml.rz.scp.css
