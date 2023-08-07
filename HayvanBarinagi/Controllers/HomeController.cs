@@ -1,6 +1,7 @@
 ﻿using HayvanBarinagi.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Diagnostics;
@@ -15,6 +16,29 @@ namespace HayvanBarinagi.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+        }
+        public IActionResult ChangeLanguage(string culture, string returnUrl)
+        {
+            if (!string.IsNullOrEmpty(culture))
+            {
+                // Seçilen dili, tarayıcı çerezlerine kaydedelim
+                Response.Cookies.Append(
+                    CookieRequestCultureProvider.DefaultCookieName,
+                    CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
+                    new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
+                );
+            }
+
+            if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
+            {
+                // returnUrl boş değilse ve güvenli bir yerel URL ise o sayfaya yönlendir
+                return LocalRedirect(returnUrl);
+            }
+            else
+            {
+                // returnUrl boş veya güvenli bir yerel URL değilse varsayılan olarak Anasayfa'ya yönlendir
+                return RedirectToAction("Index", "Home");
+            }
         }
         Context context = new Context();
         public IActionResult Index()
@@ -285,5 +309,6 @@ namespace HayvanBarinagi.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
     }
 }

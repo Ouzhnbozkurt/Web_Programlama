@@ -1,33 +1,29 @@
-﻿@{
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@{
     ViewData["Title"] = "Hakkımızda Sayfası";
 }
 
 
 <header class="bg-warning text-center py-4">
-    <h1>Hayvan Barınağı</h1>
-    <p>Barınaktaki Hayvanlara Yeni Bir Yuva Verin</p>
+    <h1>@localizer["h1"]</h1>
+    <p>@localizer["p"]</p>
 </header>
 
 <div class="container mt-4">
-    <h2 class="text-center">Hakkımızda</h2>
+    <h2 class="text-center">@localizer["h2"]</h2>
     <p>
-        Hayvan Barınağı olarak, 20 yıldır sokak hayvanlarına koruma ve sahiplendirme hizmeti veriyoruz.
-        Amacımız, sokaklarda yaşayan hayvanların yaşam koşullarını iyileştirmek ve onlara sıcak ve sevgi dolu bir yuva sağlamaktır.
+        @localizer["p1"]
     </p>
     <p>
-        Barınak ekibimiz, veterinerler ve gönüllülerden oluşmaktadır.
-        Hayvanların sağlık durumunu düzenli olarak kontrol ediyor, aşılarını yaparak ve tıbbi müdahaleleri gerçekleştiriyoruz.
+        @localizer["p2"]
     </p>
     <p>
-        Sahiplendirme sürecimiz, uygun ve sevgi dolu bir yuva sağlamak adına titizlikle yürütülmektedir.
-        Başvuruları dikkatlice inceliyor ve hayvanları sahiplenmeye uygun aileleriyle eşleştiriyoruz.
+        @localizer["p3"]
     </p>
     <p>
-        Hayvan severler olarak, hayvanların haklarına saygı gösteriyor ve toplumda farkındalığı artırmak için çeşitli etkinlikler düzenliyoruz.
-        Destekleriniz ve katkılarınız, barınakta yaşayan hayvanlar için büyük önem taşımaktadır.
+        @localizer["p4"]
     </p>
     <p>
-        Siz de hayvanlar için bir fark yaratmak istiyorsanız, barınağımıza gelerek gönüllü olarak yardım edebilir veya bağışlarınızla destek olabilirsiniz.
-        Hayvanların yaşam kalitesini yükseltmek için birlikte çalışmak dileğiyle.
+        @localizer["p5"]
     </p>
 </div>
